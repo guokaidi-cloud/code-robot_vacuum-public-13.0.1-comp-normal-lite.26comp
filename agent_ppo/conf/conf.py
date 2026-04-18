@@ -13,11 +13,11 @@ Configuration for Robot Vacuum PPO agent.
 
 class Config:
 
-    # Feature dimensions (69D)
-    # 特征维度（69D）
+    # Feature dimensions (73D): local 49 + global 16 + legal 8
+    # 特征维度（73D）：含充电桩 BFS 最短路、电量余量等
     FEATURES = [
         7 * 7,
-        12,
+        16,
         8,
     ]
     FEATURE_SPLIT_SHAPE = FEATURES

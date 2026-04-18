@@ -38,7 +38,7 @@ class Model(nn.Module):
         self.model_name = "robot_vacuum"
         self.device = device
 
-        obs_dim = Config.DIM_OF_OBSERVATION  # 69
+        obs_dim = Config.DIM_OF_OBSERVATION  # 73
         act_num = Config.ACTION_NUM  # 8
 
         # Shared backbone / 共享骨干网络

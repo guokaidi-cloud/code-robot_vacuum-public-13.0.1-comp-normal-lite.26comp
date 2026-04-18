@@ -33,7 +33,7 @@ ActData = create_cls(
 # 训练样本数据：字段值为 int 时框架自动按维度处理
 SampleData = create_cls(
     "SampleData",
-    obs=Config.DIM_OF_OBSERVATION,  # 69D feature vector / 特征向量
+    obs=Config.DIM_OF_OBSERVATION,  # 73D feature vector / 特征向量
     legal_action=Config.ACTION_NUM,  # 8D legal action mask / 合法动作掩码
     act=1,  # action index / 执行的动作
     reward=Config.VALUE_NUM,  # 1D reward / 奖励
